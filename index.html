@@ -5,6 +5,7 @@
 
 <head>
     <title>同志社SF研究会 ホームページ</title>
+    <style src="rainbow.css"></style>
 </head>
 
 
@@ -20,7 +21,29 @@
     <h2>メンバー自己紹介</h2>
 
     <h3>辻本宗一郎</h3>
-    <p>私は辻本宗一郎です</p>
+    <style>
+        .gaming{
+            font-size: 36px;
+            color: transparent;             /*文字を透明にする*/
+            background-clip: text;          /*背景を文字で切り抜く*/
+            background-image: linear-gradient(45deg,
+                red,
+                orange,
+                yellow,
+                green,
+                aqua,
+                blue,
+                purple);
+            background-size: 1200%; 
+            animation: 1s linear 0.5s infinite alternate slide;    /* slideアニメーションを4秒で往復の線形移動を無限回行う */
+        }
+        
+        @keyframes slide { 
+            from { background-position: 0% 0%; } 
+            to { background-position: 100% 0%; }    /* 右から左へ移動するアニメーション */
+        }
+    </style>
+    <h1 class="gaming">私は辻本宗一郎です</h1>
 
     <h3>トモカワショウマ</h3>
     <p>エースコンバットを盗みます</p>
@@ -29,7 +52,7 @@
     <h3>林優希</h3>
     <p>2025/05/16 に入会しました，林優希です．</p>
 
-       <h3>ジャコバン片岡</h3>
+    <h3>ジャコバン片岡</h3>
     <p>SF研の下っ端です</p>
 
     <h3>Karl Popper</h3>
